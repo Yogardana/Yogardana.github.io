@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+  <div class="layer-container">
+    <div class="layer1">
+      <div class="brand">
+        <img src="img/brand.png" alt="Brand Logo" width="165" height="80">
+      </div>
+      <div class="logo">
+        <img src="img/home.png" alt="Home Logo" width="90" height="100">
+        <a href="aboutus.html"><img src="img/about.png" alt="About Logo" width="80" height="110"></a>
+      </div>
+      <div class="logout">
+        <a href="index.html"><img src="img/logout2.png" alt="Logout Logo" width="95" height="40"></a>
+      </div>
+    </div>
+    <div class="layer2">
+        <div class="rectangle">
+          <p2 id="greeting"></p2>
+          <p>Let's Create Your Habit!!</p>
+          <img src="img/habit.png" alt="habit">
+        </div>
+
+        <div class="rectangle1">
+          
+          <p2>Overall Progress :</p2>
+          <p>This Week</p>  
+          <div class="progress-circle" id="progressCircle">0%</div>
+        </div>
+       
+        <div class="habit-list">
+        <div class="form-container" id="habitForm">
+          <h2>Create New Habit</h2>
+          <form onsubmit="saveHabit(event)">
+              <input type="text" id="habitNameInput" placeholder="Enter Habit Name" required>
+              <h3 style="text-align: left; margin-bottom: 5px;">Frequency</h3>
+              <div class="checkboxes">
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox1" data-day="Mon">
+                      <label for="checkbox1">Mon</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox2" data-day="Tue">
+                      <label for="checkbox2">Tue</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox3" data-day="Wed">
+                      <label for="checkbox3">Wed</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox4" data-day="Thu">
+                      <label for="checkbox4">Thu</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox5" data-day="Fri">
+                      <label for="checkbox5">Fri</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox6" data-day="Sat">
+                      <label for="checkbox6">Sat</label>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" id="checkbox7" data-day="Sun">
+                      <label for="checkbox7">Sun</label>
+                  </div>
+              </div>
+              <input type="submit" value="Create Habit" class="create-button">
+          </form>
+
+          
+      </div>
+    
+      <div class="card-container" id="cardContainer"></div>
+      
+    </div>
+       
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
